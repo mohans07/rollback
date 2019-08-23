@@ -1,4 +1,5 @@
 pipeline {
+    agent any
     stages {
         stage('Check for CHANGELOG update') {
             when { expression { env.BRANCH_NAME != 'master' } }
